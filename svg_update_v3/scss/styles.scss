@@ -1,0 +1,201 @@
+// Descriptive color variables
+
+$Muddy-Waters                 :#BA8058;
+$Twilight-Blue                :#FBFEFF;
+$Outer-Space                  :#2D3339;
+$Tacao                        :#EAAA7F;
+$Manhattan                    :#F4C6A6;
+$Bull-Shot                    :#844B24;
+$Abbey                        :#52595F;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('../svgs/background.svg') #edeff0;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  transition: color .5s ease-in-out;
+  }
+  a:hover {
+    color: #FFA3A3;
+  }
+
+  .home,
+  .contact {
+    fill: #FFA3A3;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: 50% 50%;
+}
+
+.visit {
+  fill: #FFA3A3;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: 50% 100%;
+}
+
+header {
+  padding-top: 10px;
+
+  nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  li:hover .home {
+    fill: #39add1;
+    transform: scale(1.25);
+  }
+
+  li:hover .visit {
+    fill: #39add1;
+    transform: translateY(-10px);
+  }
+
+  li:hover .contact {
+    fill: #39add1;
+    transform: rotate(-360deg);
+  }
+
+  nav ul li a img {
+    height: 13px;
+  }
+
+  h1 {
+    line-height: 1em;
+  }
+
+}
+
+  h1.logo-title {
+    opacity: 0;
+    @media (max-width: 424px) {
+      opacity: 1;
+    }
+  }
+
+  .logo {
+    width: 140px;
+    height: 120px;
+  }
+
+  .logo-header {
+    opacity: 1;
+    @media (max-width: 424px) {
+      opacity: 0;
+    }
+  }
+
+
+main {
+  padding-top: 50px;
+
+   h2 {
+  font-size: 28px;
+}
+   ul {
+    padding: 0;
+  }
+   li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+
+       img {
+        margin-bottom: 15px;
+        height: 170px;
+        width: 170px;
+      }
+       span {
+        margin-left: -40px;
+      }
+       & last-child {
+        margin-right: 0;
+      }
+  }
+}
+
+.corgi {
+  width: 170px;
+  height: 170px;
+}
+
+
+.corgi-red-mouth,
+.corgi-fawn-mouth,
+.corgi-sable-mouth,
+.corgi-blktan-mouth {
+  fill: $Twilight-Blue;
+}
+
+.corgi-red-face,
+.corgi-red-ear,
+.corgi-sable-brow,
+.corgi-blktan-brow,
+.corgi-blktan-ear  {
+  fill: $Muddy-Waters;
+}
+
+.corgi-red-brow,
+.corgi-fawn-brow {
+  fill: $Manhattan;
+}
+
+.corgi-red-nose,
+.corgi-red-eye,
+.corgi-fawn-nose,
+.corgi-fawn-eye,
+.corgi-sable-nose,
+.corgi-sable-eye,
+.corgi-blktan-eye,
+.corgi-blktan-nose  {
+  fill: $Outer-Space;
+}
+
+.corgi-fawn-face,
+.corgi-fawn-ear {
+  fill: $Tacao;
+}
+
+.corgi-sable-face,
+.corgi-sable-ears {
+  fill: $Bull-Shot;
+}
+
+.corgi-blktan-face {
+  fill: $Abbey;
+}
+
+
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
